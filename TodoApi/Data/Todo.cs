@@ -6,11 +6,11 @@ public class Todo
     public string Title { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
 
-    public Priority priority { get; set; } = Priority.Medium;
+    public Priority Priority { get; set; } = Priority.Medium;
     public bool IsDone { get; set; }
 
-    public DateTime createTime { get; set; }
-    public DateTime updateTime { get; set; }
+    public DateTime CreateTime { get; set; }
+    public DateTime UpdateTime { get; set; }
 }
 
 public enum  Priority { 
