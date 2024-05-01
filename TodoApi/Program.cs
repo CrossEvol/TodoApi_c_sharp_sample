@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<TodoGroupDbContext>(options =>
 {
     var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-    options.UseSqlite($"Data Source={Path.Join(path, "WebMinRouteGroup.db")}");
+    options.UseSqlite($"Data Source={Path.Join(path, "todo.db")}");
 });
 
 var app = builder.Build();
