@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "WebMinRouteGroup": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:33519;http://localhost:33520"
+    }
+  }
+}
