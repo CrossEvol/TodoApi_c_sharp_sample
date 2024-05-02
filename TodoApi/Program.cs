@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using TodoApi;
 using TodoApi.Data;
 using TodoApi.Services;
@@ -10,6 +12,9 @@ builder.Services.AddSingleton<IEmailService, EmailService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.ConfigureHttpJsonOptions(
+    options => options.SerializerOptions.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)));
 
 
 builder.Services.AddDbContext<TodoGroupDbContext>(options =>
