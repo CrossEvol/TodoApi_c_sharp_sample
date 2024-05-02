@@ -26,9 +26,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-using var scope = app.Services.CreateScope();
-var db = scope.ServiceProvider.GetService<TodoGroupDbContext>();
-db?.Database.MigrateAsync();
+using (var scope = app.Services.CreateScope()) {
+    var db = scope.ServiceProvider.GetService<TodoGroupDbContext>();
+    db?.Database.MigrateAsync();
+    db?.Database.EnsureCreated();
+    DbInitializer.Initialize(db!);
+}
+
 
 // todoV1 endpoints
 app.MapGroup("/todos/v1")
