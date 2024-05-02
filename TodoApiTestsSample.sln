@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\Unit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{0A15481D-DD72-4BFF-9971-14361E0F5E34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibTests", "LibTests\LibTests.csproj", "{222E270A-B6CC-457B-8FFD-43575776AB22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0A15481D-DD72-4BFF-9971-14361E0F5E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A15481D-DD72-4BFF-9971-14361E0F5E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A15481D-DD72-4BFF-9971-14361E0F5E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{222E270A-B6CC-457B-8FFD-43575776AB22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{222E270A-B6CC-457B-8FFD-43575776AB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{222E270A-B6CC-457B-8FFD-43575776AB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{222E270A-B6CC-457B-8FFD-43575776AB22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
